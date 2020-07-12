@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+date_default_timezone_set('America/La_Paz');
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/afiliacion';
-
+//$config['base_url'] = 'http://localhost/afiliacion';
+$config['base_url'] = 'https://ssuoruro.gob.bo/afiliacion';
 /*
 |--------------------------------------------------------------------------
 | Index File

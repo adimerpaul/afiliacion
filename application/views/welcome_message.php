@@ -30,19 +30,19 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="nombres">Nombre(s)</label>
-                                    <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombre Completo" required>
+                                    <input type="text" style="text-transform: uppercase;" class="form-control" id="nombres" name="nombres" placeholder="Nombre Completo" required>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="paterno">Apellido Paterno</label>
-                                    <input type="text" class="form-control" id="paterno" name="paterno" placeholder="Apellido Paterno" required>
+                                    <input type="text" style="text-transform: uppercase;" class="form-control" id="paterno" name="paterno" placeholder="Apellido Paterno" required>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="materno">Apellido Materno</label>
-                                    <input type="text" class="form-control" id="materno" name="materno" placeholder="Apellido Materno" required>
+                                    <input type="text" style="text-transform: uppercase;" class="form-control" id="materno" name="materno" placeholder="Apellido Materno" >
                                 </div>
                             </div>
                             <div class="col-md-8">
@@ -78,7 +78,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="ci">CI</label>
-                                    <input type="text" class="form-control" id="ci" name="ci" required placeholder="Carnet de identidad">
+                                    <input type="text" style="text-transform: uppercase;" minlength="6" class="form-control" id="ci" name="ci" required placeholder="Carnet de identidad">
                                     <small class="form-text text-muted">Escribe tu Carnet de Identidad</small>
                                 </div>
                             </div>
