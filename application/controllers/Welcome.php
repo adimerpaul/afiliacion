@@ -145,12 +145,21 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
         QRcode::png("Nombre=$paterno $materno $nombres|Nacimiento=$dia de $mes Del $anio|CI=$ci|Codigo=$codigo|$codafiliacion-$matricula", 'img/a.png', QR_ECLEVEL_L, 4);
 // Set some content to print
         $html = '
-<br>
 <p>Oruro, '.date('d').' de '.$mesCon[(int)(date('m')-1)].' del '.date('Y').'</p>
 <p><b>Código de Control: </b> '.$codigo.'</p>
+
+<br>
+<div></div>
+<br>
+<div></div>
+<br>
 <h2 align="center">FORMULARIO DE '.$text.' AFILIACIÓN </h2>
-<h4 align="center">Formulario de '. ucfirst(strtolower($text)).' Afiliación al  <br>Seguro Social Universitario de Oruro </h4>
-<p>SEGURO SOCIAL UNIVERSITARIO DE ORURO, A SOLICITUD DEL INTERESADO: </p>
+
+<br>
+<div></div>
+<br>
+<div></div>
+<br>
 <p align="justify">El Departamento de Seguros del Seguro Social Universitario Oruro, en atención a la solicitud vía página Web por el(la) interesado(a), hace saber que:</p>
 <p>De acuerdo a la Base de Datos del Seguro Social Universitario Oruro, se tiene que el (la) señor(a): '.$paterno.' '.$materno.' '.$nombres.' con Cédula de Identidad  '.$ci.'  y fecha de nacimiento '.$dia.' de  '.strtolower($mes).' del '.$anio.', '.strtolower($text).' se encuentra afiliado(a) en nuestro seguro de salud.</p>
 <p><b><u>MEDIDA DE SEGURIDAD</u></b></p>
@@ -158,10 +167,10 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
 <img src="img/a.png" alt="">
 </p>
 <p>NOTAS: </p>
-<p>La validez del presente documento es de 60 días a partir de la fecha de emisión.</p>
-<p>La modificación total o parcial y/o el uso no indebido de este documento será de estricta responsabilidad del solicitante, constituyendo un delito de ser sancionado conforme a Ley.</p>
+<p align="justify">La validez del presente documento es de 60 días a partir de la fecha de emisión.</p>
+<p align="justify">La modificación total o parcial y/o el uso no indebido de este documento será de estricta responsabilidad del solicitante, constituyendo un delito de ser sancionado conforme a Ley.</p>
 <br>
-<p>La veracidad del presente Formulario puede ser verificada introduciendo el Código de Control en <u>https://ssuoruro.gob.bo/</u> o a través del Código QR con un dispositivo móvil.</p>
+<p align="justify">La veracidad del presente Formulario puede ser verificada introduciendo el Código de Control en <u>https://ssuoruro.gob.bo/</u> o a través del Código QR con un dispositivo móvil.</p>
 
 ';
 //<p align="justify">Da a conocer que: De acuerdo a la base de datos del Seguro Social Universitario de Oruro, '.$paterno.' '.$materno.' '.$nombres.', con documento de identidad '.$ci.' y fecha de nacimiento '.$dia.' de  '.strtolower($mes).' del '.$anio.', '.strtolower($text).' se encuentra afiliado (a) en nuestro seguro de salud.</p>
