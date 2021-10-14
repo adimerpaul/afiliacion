@@ -104,7 +104,7 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
 
 // set default header data
         $realizado="https://wwww.ssuoruro.gob.bo/";
-        $pdf->SetHeaderData('ssu2.jpg', 20, 'SEGURO SOCIAL UNIVERSITARIO', "Ente Gestor de la Seguridad Social de Corto Plazo\nhttps://ssuoruro.gob.bo
+        $pdf->SetHeaderData('ssu2.jpg', 20, 'SEGURO SOCIAL UNIVERSITARIO', "Ente Gestor de la Seguridad Social de Corto Plazo\nhttps://www.ssuoruro.gob.bo
         ", array(0,0,0), array(0,0,0));
         $pdf->setFooterData(array(0,64,0), array(0,64,128));
 
