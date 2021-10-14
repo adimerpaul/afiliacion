@@ -81,12 +81,19 @@ WHERE P.CI='$ci' AND P.DIA='$dia' AND P.MES='$mes' AND P.GESTION='$anio'");*/
         }*/
         $codigo="OR-SSU-$co".str_pad($id, 5, "0", STR_PAD_LEFT);;
         $mesCon=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Actubre","Noviembre","Diciembre"];
-        $sentencia = "INSERT INTO CERTIFICACION VALUES('$id','$nombres','$paterno','$materno','$ci','$dia','$mes','$anio','".date('m/d/Y')."','$codigo','$afiliado','$codafiliacion')";
+        $sentencia = "INSERT INTO CERTIFICACION VALUES('$id','$nombres','$paterno','$materno','$ci','$dia','$mes','$anio','".date('m/d/Y')."','$codigo','$afiliado','$codafiliacion','AFILIACION')";
 $gestor_sent = ibase_query($gestor_db, $sentencia);
 //exit;
         //$this->db->query("INSERT INTO CONSULTAAFILIACION VALUES('$id','$nombres','$paterno','$materno','$ci','$dia','$mes','$anio','".date('m/d/Y')."','$codigo','$afiliado','$codafiliacion')");
 //        exit;
 // create new PDF document
+        if($afiliado=="SI"){
+                echo "<h3 style='background:#dd2c00;color:white;font-size:15px;padding:10px'>Usted se encuentra afiliado al Seguro Social Universitario Oruro</h3>
+                <a href='https://ssuoruro.gob.bo/afiliacion/'>Volver a consular</a>";
+                exit;
+        }
+
+
         $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 // set document information
         $pdf->SetCreator(PDF_CREATOR);
@@ -96,7 +103,7 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
 //        $pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 
 // set default header data
-        $realizado="https://ssuoruro.gob.bo/";
+        $realizado="https://wwww.ssuoruro.gob.bo/";
         $pdf->SetHeaderData('ssu2.jpg', 20, 'SEGURO SOCIAL UNIVERSITARIO', "Ente Gestor de la Seguridad Social de Corto Plazo\nhttps://ssuoruro.gob.bo
         ", array(0,0,0), array(0,0,0));
         $pdf->setFooterData(array(0,64,0), array(0,64,128));

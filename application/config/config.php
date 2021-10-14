@@ -25,7 +25,7 @@ date_default_timezone_set('America/La_Paz');
 |
 */
 //$config['base_url'] = 'http://localhost/afiliacion';
-$config['base_url'] = 'https://ssuoruro.gob.bo/afiliacion';
+$config['base_url'] = 'https://www.ssuoruro.gob.bo/afiliacion';
 /*
 |--------------------------------------------------------------------------
 | Index File
