@@ -89,7 +89,7 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
 // create new PDF document
         if($afiliado=="SI"){
                 echo "<h3 style='background:#dd2c00;color:white;font-size:15px;padding:10px'>Usted se encuentra afiliado al Seguro Social Universitario Oruro</h3>
-                <a href='https://ssuoruro.gob.bo/afiliacion/'>Volver a consular</a>";
+                <a href='https://www.ssuoruro.gob.bo/afiliacion/'>Volver a consular</a>";
                 exit;
         }
 
@@ -177,7 +177,7 @@ $gestor_sent = ibase_query($gestor_db, $sentencia);
 <p align="justify">La validez del presente documento es de 60 días a partir de la fecha de emisión.</p>
 <p align="justify">La modificación total o parcial y/o el uso no indebido de este documento será de estricta responsabilidad del solicitante, constituyendo un delito de ser sancionado conforme a Ley.</p>
 <br>
-<p align="justify">La veracidad del presente Formulario puede ser verificada introduciendo el Código de Control en <u>https://ssuoruro.gob.bo/</u> o a través del Código QR con un dispositivo móvil.</p>
+<p align="justify">La veracidad del presente Formulario puede ser verificada introduciendo el Código de Control en <u>https://www.ssuoruro.gob.bo/</u> o a través del Código QR con un dispositivo móvil.</p>
 
 ';
 //<p align="justify">Da a conocer que: De acuerdo a la base de datos del Seguro Social Universitario de Oruro, '.$paterno.' '.$materno.' '.$nombres.', con documento de identidad '.$ci.' y fecha de nacimiento '.$dia.' de  '.strtolower($mes).' del '.$anio.', '.strtolower($text).' se encuentra afiliado (a) en nuestro seguro de salud.</p>
